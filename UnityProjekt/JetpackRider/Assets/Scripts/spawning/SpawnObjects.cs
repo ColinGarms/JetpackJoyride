@@ -11,11 +11,13 @@ public class SpawnObjects : MonoBehaviour{
     private void SpawnObject()
     {
         float chance = Random.Range(0f, 1.0f);
+        //spawn drone
         if (chance < 0.6)
         {
             GameObject objectToSpawn = Instantiate(dronePrefab) as GameObject;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
         }
+        //spawn coin
         else
         {
             GameObject objectToSpawn2 = Instantiate(coinPrefab) as GameObject;

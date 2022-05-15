@@ -11,7 +11,7 @@ public class CoinManager : MonoBehaviour
     //[SerialiseField] private int money; 
     // Start is called before the first frame update
    private int money;
-   [SerializeField] private Text text ; 
+   //[SerializeField] private Text text ; 
     void Start()
     {
         money = 0;
@@ -25,8 +25,9 @@ public class CoinManager : MonoBehaviour
         updateUI();
     }
 
+    // change the coin number in the UI
     private void updateUI()
     {
-        text.text = money.ToString();
+      //TODO: implement change in userinterface, display money
     }
 }

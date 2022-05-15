@@ -9,11 +9,17 @@ public class CoinController : MonoBehaviour
     [SerializeField] private SpriteRenderer coinSprite;
     [SerializeField] private Rigidbody2D rigidbody; 
 	private Vector2 newVelocity;
+	
+	public float speed = -3.0f;
+	private Vector2 screenBounds;
     
     // Start is called before the first frame update
     void Start()
     {
-		newVelocity = new Vector2(-1f,0);
+	    //get
+	    rigidbody = this.GetComponent<Rigidbody2D>();
+	    rigidbody.velocity = new Vector2(speed, 0);
+	    screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
     // Update is called once per frame
@@ -23,8 +29,12 @@ public class CoinController : MonoBehaviour
 
     void FixedUpdate()
     {
-		//set stardard velocity
-        rigidbody.velocity = newVelocity;
+		//set velocity
+		rigidbody.velocity = new Vector2(speed, 0);
+		if (transform.position.x <-10)
+		{
+			Destroy(this.gameObject);
+		}
     }
 
     private void OnTriggerEnter2D(Collider2D other)
