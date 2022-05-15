@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 
 
 // adds lifepoints to the game and calls methods of WinLoose to crate a win and loose screen
@@ -37,7 +38,7 @@ public class LifeTracker : MonoBehaviour
         //check for game over condition
         if (lifePoints <= 0)
         {
-            //winLoose.loose();
+            //TODO: do something when you lose, like a change in state-> gameOver
         }
             
             

@@ -16,16 +16,14 @@ public class CoinController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-	    //get
+	    //set the initial speed
 	    rigidbody = this.GetComponent<Rigidbody2D>();
 	    rigidbody.velocity = new Vector2(speed, 0);
+	    //?????
 	    screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+
 
     void FixedUpdate()
     {
