@@ -390,6 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c94a245d2fdb81428d8b57ee5d5531f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinManager: {fileID: 0}
   coinSprite: {fileID: 694882382}
   rigidbody: {fileID: 694882380}
 --- !u!1 &1176718260
@@ -671,6 +672,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.25, y: 10.24}
   m_EdgeRadius: 0
+--- !u!1 &1597381778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1597381780}
+  - component: {fileID: 1597381779}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1597381779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597381778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675f3eee5a91a184d8350477edbafcf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dronePrefab: {fileID: 2864524762660670861, guid: 5beb0a1e3dc083f428c02dd4d618a237, type: 3}
+  coinPrefab: {fileID: 7264918815620845427, guid: 3d811d696bd929843923e604ceff6ba0, type: 3}
+  respawnTime: 3
+--- !u!4 &1597381780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597381778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.75605655, y: -0.2663425, z: -2.7616236}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648171443
 GameObject:
   m_ObjectHideFlags: 0
