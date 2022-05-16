@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnObjects : MonoBehaviour{
@@ -23,8 +22,6 @@ public class SpawnObjects : MonoBehaviour{
             GameObject objectToSpawn2 = Instantiate(coinPrefab) as GameObject;
             objectToSpawn2.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3)); 
         }
-
-        
     }
 
     // Start is called before the first frame update

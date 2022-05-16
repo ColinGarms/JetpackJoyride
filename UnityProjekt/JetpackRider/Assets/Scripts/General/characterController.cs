@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class characterController : MonoBehaviour
@@ -13,11 +10,6 @@ public class characterController : MonoBehaviour
     private float maxVelocityUp =5f;
     private Vector2 upSpeed; 
     private bool boost;
-    
-
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
@@ -39,7 +31,6 @@ public class characterController : MonoBehaviour
         //when ypu remember that space is pressed, fly up
         flyUp();
     }
-
 
     private void flyUp()
     {

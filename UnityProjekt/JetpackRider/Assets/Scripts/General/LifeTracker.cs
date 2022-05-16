@@ -1,15 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Android;
-
 
 // adds lifepoints to the game and calls methods of WinLoose to crate a win and loose screen
 public class LifeTracker : MonoBehaviour
 {
-    //images that show the healthpoints for the player, each one for 1 health point
-
-    private int maxLifePoitns = 7;
     // life points with valid range
     [SerializeField][Range(0, 2)] private int lifePoints;
 
@@ -27,7 +20,6 @@ public class LifeTracker : MonoBehaviour
 
     }
 
-
     // called when there is a change to the lifepoints of the player
     public void changeLifePoints(int change)
     {
@@ -40,7 +32,6 @@ public class LifeTracker : MonoBehaviour
         {
             //TODO: do something when you lose, like a change in state-> gameOver
         }
-            
-            
+                 
     }
 }

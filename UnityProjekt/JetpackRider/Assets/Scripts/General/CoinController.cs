@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CoinController : MonoBehaviour
@@ -22,8 +20,6 @@ public class CoinController : MonoBehaviour
 	    //?????
 	    screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
-
-
 
     void FixedUpdate()
     {
