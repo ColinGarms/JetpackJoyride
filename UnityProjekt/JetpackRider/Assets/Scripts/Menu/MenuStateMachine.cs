@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace MainMenu 
 {
-    public class MenuStateMachine : Statemachine<MenuTransitions> 
+    public class MenuStateMachine : StateMachine<MenuTransitions> 
     {
 
         [field: SerializeField] public StateHandler MainMenuHandler { get; private set; }

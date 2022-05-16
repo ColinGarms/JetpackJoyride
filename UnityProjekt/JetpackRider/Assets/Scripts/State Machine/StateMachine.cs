@@ -8,7 +8,7 @@ public enum RuntimeTransitions
     FromInit
 }
 
-public abstract class Statemachine<Transition> : MonoBehaviour where Transition : struct, Enum 
+public abstract class StateMachine<Transition> : MonoBehaviour where Transition : struct, Enum 
 {
 
     [SerializeField] private List<TransitionConnection> transitions;
