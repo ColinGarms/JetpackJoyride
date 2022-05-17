@@ -36,7 +36,7 @@ public class CoinController : MonoBehaviour
 		//destroy on contact with player
         if (other.gameObject.CompareTag("Player"))
         {
-	        coinManager.addAmount(worth);
+	        //coinManager.addAmount(worth);
 			Destroy(this.gameObject);
         }
     }

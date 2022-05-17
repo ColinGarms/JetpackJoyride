@@ -1,4 +1,5 @@
 using UnityEngine;
+using MainMenu;
 
 public class ScreenHandler : StateHandler
 {
@@ -18,5 +19,12 @@ public class ScreenHandler : StateHandler
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
-    }    
+    }   
+
+    private void Awake() {
+
+        OnExit(MenuTransitions.MainMenuSelected);
+        //canvasGroup.gameObject.SetActive(true);
+        
+    } 
 }
