@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd555ba6-17f2-4223-8f58-0183237db51e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../General/CoinController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../General/CoinController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../General/CoinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../General/CoinManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpawnObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpawnObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prefabs/coin_test.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../prefabs/coin_test.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../prefabs/drone_test.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../prefabs/drone_test.prefab" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../General/CoinController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpawnObjects.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Coins.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29CcQoCzGRgp2vJbnsv63g3yH5G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd555ba6-17f2-4223-8f58-0183237db51e" name="Changes" comment="" />
+      <created>1652620498610</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652620498610</updated>
+      <workItem from="1652620505252" duration="553000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

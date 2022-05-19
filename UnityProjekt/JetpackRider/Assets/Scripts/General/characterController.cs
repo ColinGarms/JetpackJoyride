@@ -1,9 +1,22 @@
+using System;
 using UnityEngine;
+using UnityEngine.Android;
 
 public class characterController : MonoBehaviour
 {
+    [Serializable]private class CharacterSprites
+		
+    {
+        public Sprite[] walkingSprites;
+        public Sprite[] boostingSprites;
+        public Sprite[] fallingSprites;
+        //public string name;
+    }
+
+    public SpriteRenderer CharacterSprite => characterSprite;
     // Start is called before the first frame update
     [SerializeField] private SpriteRenderer characterSprite;
+    [SerializeField] private CharacterSprites[] Characters;
     [SerializeField] private Rigidbody2D rigidbody; 
     [SerializeField] private LifeTracker lifeTracker;
     private float  upForce = 0.5f;
@@ -11,6 +24,12 @@ public class characterController : MonoBehaviour
     private Vector2 upSpeed; 
     private bool boost;
 
+    private int characterSpriteIndex = 0;
+    private int characterSpriteWalkingIndex = 0;
+    private int characterSpriteBoostingIndex = 0;
+    private int  characterSpriteFallingIndex= 0;
+    
+    
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +42,33 @@ public class characterController : MonoBehaviour
         else
         {
             boost = false;
+        }   
+        
+        var indexer = (int) (Time.time / 0.125f);
+       
+        
+        
+        //boosting
+        if (boost)
+        {
+            characterSpriteBoostingIndex = (indexer) % (Characters[characterSpriteIndex].boostingSprites.Length);
+            characterSprite.sprite = Characters[characterSpriteIndex].boostingSprites[characterSpriteBoostingIndex];
         }
+        //walking
+        //TODO: fix that when you are in the air, you can walk for a moment
+        else if (rigidbody.velocity.y==0)
+        {
+            characterSpriteWalkingIndex = (indexer) % (Characters[characterSpriteIndex].walkingSprites.Length);
+            characterSprite.sprite = Characters[characterSpriteIndex].walkingSprites[characterSpriteWalkingIndex];
+        }
+        //falling
+        else
+        {
+            characterSpriteFallingIndex = (indexer) % (Characters[characterSpriteIndex].fallingSprites.Length);
+            characterSprite.sprite = Characters[characterSpriteIndex].fallingSprites[characterSpriteFallingIndex];
+        }
+        
+
     }
 
     void FixedUpdate()
