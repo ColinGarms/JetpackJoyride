@@ -33,7 +33,7 @@ public class BackgroundScroller : MonoBehaviour
         transform.position = new Vector3(startPosition + distance, transform.position.y, transform.position.z);
 
         
-        Debug.Log(temp);
+        
         
         if (backgroundPos.x > 0)
         {
