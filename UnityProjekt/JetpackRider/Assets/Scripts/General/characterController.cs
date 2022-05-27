@@ -28,6 +28,11 @@ public class characterController : MonoBehaviour
     private int characterSpriteWalkingIndex = 0;
     private int characterSpriteBoostingIndex = 0;
     private int  characterSpriteFallingIndex= 0;
+
+    void Start()
+    {
+        rigidbody.freezeRotation = true;
+    }
     
     
     // Update is called once per frame
@@ -44,7 +49,7 @@ public class characterController : MonoBehaviour
             boost = false;
         }   
         
-        var indexer = (int) (Time.time / 0.125f);
+        var indexer = (int) (Time.time / 0.100f);
        
         
         
