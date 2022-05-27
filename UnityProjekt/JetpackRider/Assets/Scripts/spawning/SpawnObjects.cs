@@ -7,6 +7,7 @@ public class SpawnObjects : MonoBehaviour{
     public GameObject laserPrefab;
     public GameObject coinPrefab;
     public GameObject coinCirclePrefab;
+    public GameObject rocketPrefab;
     public float respawnTime = 1.0f;
     private Vector2 screenBounds;
     
@@ -17,26 +18,31 @@ public class SpawnObjects : MonoBehaviour{
         
         float chance = Random.Range(0f, 1.0f);
         
-        if (chance < 0.4)
+        if (chance < 0.3)
         {
             GameObject objectToSpawn = Instantiate(dronePrefab) as GameObject;
-            objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
+            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
         }
-        if (chance > 0.8)
+        else if (chance <0.5)
+        {
+            GameObject objectToSpawn = Instantiate(rocketPrefab) as GameObject;
+            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
+        }
+       else if (chance < 0.6)
         {
             GameObject objectToSpawn = Instantiate(coinCirclePrefab) as GameObject;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*1, screenBounds.y*0.8f));
         }
-        if (chance < 0.8 && chance > 0.6)
+        else if (chance <0.8)
         {
-            GameObject objectToSpawn2 = Instantiate(coinPrefab) as GameObject;
-            objectToSpawn2.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3)); 
+            GameObject objectToSpawn = Instantiate(coinPrefab) as GameObject;
+            objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3)); 
         }
-        if (chance < 0.6 && chance > 0.4)
+        else if (chance <= 1)
         {
-            GameObject objectToSpawn2 = Instantiate(laserPrefab) as GameObject;
-            objectToSpawn2.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
-            objectToSpawn2.transform.Rotate(new Vector3(0,0,Random.Range(0, 360)));
+            GameObject objectToSpawn = Instantiate(laserPrefab) as GameObject;
+            objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
+            objectToSpawn.transform.Rotate(new Vector3(0,0,Random.Range(0, 360)));
         }
 
         
