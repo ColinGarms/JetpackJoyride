@@ -356,7 +356,6 @@ GameObject:
   m_Component:
   - component: {fileID: 75101264}
   - component: {fileID: 75101266}
-  - component: {fileID: 75101265}
   m_Layer: 0
   m_Name: Skybox Part 3
   m_TagString: Untagged
@@ -378,22 +377,6 @@ Transform:
   m_Father: {fileID: 741875661}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &75101265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75101263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &75101266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -458,7 +441,6 @@ GameObject:
   - component: {fileID: 122061377}
   - component: {fileID: 122061376}
   - component: {fileID: 122061375}
-  - component: {fileID: 122061378}
   m_Layer: 5
   m_Name: Level 2
   m_TagString: Untagged
@@ -580,18 +562,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122061373}
   m_CullTransparentMesh: 1
---- !u!114 &122061378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122061373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cc4e9541fecf74595a6d6f50593689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &162220594
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +617,6 @@ GameObject:
   m_Component:
   - component: {fileID: 166883361}
   - component: {fileID: 166883363}
-  - component: {fileID: 166883362}
   m_Layer: 0
   m_Name: Building Part 2
   m_TagString: Untagged
@@ -669,22 +638,6 @@ Transform:
   m_Father: {fileID: 1906541800}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &166883362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166883360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.1
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &166883363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1293,7 +1246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 366972776}
   - component: {fileID: 366972778}
-  - component: {fileID: 366972777}
   m_Layer: 0
   m_Name: Skybox Part 2
   m_TagString: Untagged
@@ -1315,22 +1267,6 @@ Transform:
   m_Father: {fileID: 741875661}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &366972777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366972775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &366972778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1789,7 +1725,6 @@ GameObject:
   m_Component:
   - component: {fileID: 455962482}
   - component: {fileID: 455962481}
-  - component: {fileID: 455962483}
   m_Layer: 0
   m_Name: Background Buildings Front
   m_TagString: Untagged
@@ -1866,22 +1801,6 @@ Transform:
   m_Father: {fileID: 946118543}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &455962483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455962480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.5
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!1 &488896078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +1978,18 @@ MonoBehaviour:
           m_StringArgument: LevelSelected
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 505185211}
+        m_TargetAssemblyTypeName: GameTimeManager, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &505185209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2106,7 +2037,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 505185206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cc4e9541fecf74595a6d6f50593689, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2f8c75aeab21442a4bb6d679a0aa23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &509789091
@@ -2199,6 +2130,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2214,6 +2146,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e6d28f39f963745997122ccc838080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2281,7 +2225,6 @@ GameObject:
   m_Component:
   - component: {fileID: 525241837}
   - component: {fileID: 525241836}
-  - component: {fileID: 525241838}
   m_Layer: 0
   m_Name: Background Buildings Dark
   m_TagString: Untagged
@@ -2358,22 +2301,6 @@ Transform:
   m_Father: {fileID: 946118543}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &525241838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525241835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.3
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!1 &526627180
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,18 +2516,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1188985619}
-        m_TargetAssemblyTypeName: StateMachine`1[[MainMenu.MenuTransitions, Assembly-CSharp
-        m_MethodName: Trigger
+      - m_Target: {fileID: 11500000, guid: 7a2f8c75aeab21442a4bb6d679a0aa23, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GamePaused
+          m_StringArgument: PauseGame()
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &547217923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,7 +2989,6 @@ GameObject:
   - component: {fileID: 694882381}
   - component: {fileID: 694882380}
   - component: {fileID: 694882384}
-  - component: {fileID: 694882385}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -3189,25 +3115,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
---- !u!114 &694882385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694882379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c94a245d2fdb81428d8b57ee5d5531f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  worth: 1
-  coinManager: {fileID: 0}
-  coinSprite: {fileID: 694882382}
-  rigidbody: {fileID: 694882380}
-  newVelocity: {x: 0, y: 0}
-  speed: -3
-  screenBounds: {x: 0, y: 0}
 --- !u!1 &700376433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,7 +3236,6 @@ GameObject:
   m_Component:
   - component: {fileID: 741875661}
   - component: {fileID: 741875660}
-  - component: {fileID: 741875662}
   m_Layer: 0
   m_Name: Background Skybox
   m_TagString: Untagged
@@ -3406,22 +3312,6 @@ Transform:
   m_Father: {fileID: 946118543}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &741875662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741875659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!1 &816200878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3805,7 +3695,6 @@ GameObject:
   m_Component:
   - component: {fileID: 869001733}
   - component: {fileID: 869001735}
-  - component: {fileID: 869001734}
   m_Layer: 0
   m_Name: Building Part 3
   m_TagString: Untagged
@@ -3827,22 +3716,6 @@ Transform:
   m_Father: {fileID: 455962482}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &869001734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 869001732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.5
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &869001735
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4547,7 +4420,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1006999868}
   - component: {fileID: 1006999870}
-  - component: {fileID: 1006999869}
   m_Layer: 0
   m_Name: Building Part 3
   m_TagString: Untagged
@@ -4569,22 +4441,6 @@ Transform:
   m_Father: {fileID: 525241837}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1006999869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006999867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.3
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1006999870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5397,7 +5253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1205887297}
   - component: {fileID: 1205887299}
-  - component: {fileID: 1205887298}
   m_Layer: 0
   m_Name: Skybox Part 1
   m_TagString: Untagged
@@ -5419,22 +5274,6 @@ Transform:
   m_Father: {fileID: 741875661}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1205887298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205887296}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1205887299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6143,7 +5982,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1362875662}
   - component: {fileID: 1362875664}
-  - component: {fileID: 1362875663}
   m_Layer: 0
   m_Name: Building Part 1
   m_TagString: Untagged
@@ -6165,22 +6003,6 @@ Transform:
   m_Father: {fileID: 525241837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1362875663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362875661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.3
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1362875664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6243,7 +6065,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1434946779}
   - component: {fileID: 1434946781}
-  - component: {fileID: 1434946780}
   m_Layer: 0
   m_Name: Building Part 1
   m_TagString: Untagged
@@ -6265,22 +6086,6 @@ Transform:
   m_Father: {fileID: 455962482}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1434946780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434946778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.5
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1434946781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6565,151 +6370,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1614002723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1614002724}
-  - component: {fileID: 1614002728}
-  - component: {fileID: 1614002727}
-  - component: {fileID: 1614002726}
-  - component: {fileID: 1614002725}
-  m_Layer: 5
-  m_Name: Back
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1614002724
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614002723}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1836966560}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 24.3}
-  m_SizeDelta: {x: 16.1408, y: 17.092499}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1614002725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614002723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cc4e9541fecf74595a6d6f50593689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1614002726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614002723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1614002727}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1614002725}
-        m_TargetAssemblyTypeName: Load_Scene, Assembly-CSharp
-        m_MethodName: loadSelectedScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Main-Menu
-          m_BoolArgument: 0
-        m_CallState: 1
---- !u!114 &1614002727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614002723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -796012600723145568, guid: 236587ec711348a4792e0060efb1bf73, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1614002728
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614002723}
-  m_CullTransparentMesh: 1
 --- !u!1 &1630332497
 GameObject:
   m_ObjectHideFlags: 0
@@ -7132,7 +6792,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1779636351}
   - component: {fileID: 1779636353}
-  - component: {fileID: 1779636352}
   m_Layer: 0
   m_Name: Building Part 2
   m_TagString: Untagged
@@ -7154,22 +6813,6 @@ Transform:
   m_Father: {fileID: 525241837}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1779636352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779636350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.3
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1779636353
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7232,7 +6875,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1794659194}
   - component: {fileID: 1794659196}
-  - component: {fileID: 1794659195}
   m_Layer: 0
   m_Name: Building Part 1
   m_TagString: Untagged
@@ -7254,22 +6896,6 @@ Transform:
   m_Father: {fileID: 1906541800}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1794659195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794659193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.1
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1794659196
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7356,7 +6982,6 @@ RectTransform:
   - {fileID: 505185207}
   - {fileID: 122061374}
   - {fileID: 1959473133}
-  - {fileID: 1614002724}
   m_Father: {fileID: 1141287206}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7425,7 +7050,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1906541800}
   - component: {fileID: 1906541799}
-  - component: {fileID: 1906541801}
   m_Layer: 0
   m_Name: Background Buildings Light
   m_TagString: Untagged
@@ -7502,22 +7126,6 @@ Transform:
   m_Father: {fileID: 946118543}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1906541801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906541798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.1
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1913954438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7565,7 +7173,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1925471013}
   - component: {fileID: 1925471015}
-  - component: {fileID: 1925471014}
   m_Layer: 0
   m_Name: Building Part 2
   m_TagString: Untagged
@@ -7587,22 +7194,6 @@ Transform:
   m_Father: {fileID: 455962482}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1925471014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925471012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.5
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &1925471015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7667,7 +7258,6 @@ GameObject:
   - component: {fileID: 1959473136}
   - component: {fileID: 1959473135}
   - component: {fileID: 1959473134}
-  - component: {fileID: 1959473137}
   m_Layer: 5
   m_Name: Level 3
   m_TagString: Untagged
@@ -7789,18 +7379,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959473132}
   m_CullTransparentMesh: 1
---- !u!114 &1959473137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959473132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cc4e9541fecf74595a6d6f50593689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1980189289
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,7 +7634,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2104540321}
   - component: {fileID: 2104540323}
-  - component: {fileID: 2104540322}
   m_Layer: 0
   m_Name: Building Part 3
   m_TagString: Untagged
@@ -8078,22 +7655,6 @@ Transform:
   m_Father: {fileID: 1906541800}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2104540322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104540320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 791faf99314717946b4a3e698c685887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  length: 0
-  startPosition: 0
-  scrollSpeed: 0.1
-  backgroundPos: {x: 0, y: 0, z: 0}
 --- !u!212 &2104540323
 SpriteRenderer:
   m_ObjectHideFlags: 0

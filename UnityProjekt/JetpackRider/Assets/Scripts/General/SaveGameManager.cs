@@ -26,12 +26,12 @@ public class SaveGameManager : MonoBehaviour
     private static void SaveThisGame(SaveGame data, string subPath)
     {
         
-            var jsonString = JsonUtility.ToJson(data);
-            var fullPath = Path.Combine(Application.dataPath, subPath);
-            using (var streamWriter = File.CreateText(fullPath))
-            {
-                streamWriter.Write(jsonString);
-            }
+        var jsonString = JsonUtility.ToJson(data);
+        var fullPath = Path.Combine(Application.dataPath, subPath);
+        
+        using (var streamWriter = File.CreateText(fullPath)) {
+            streamWriter.Write(jsonString);
+        }
     }
 
     private static SaveGame LoadThisGame(string subPath)
