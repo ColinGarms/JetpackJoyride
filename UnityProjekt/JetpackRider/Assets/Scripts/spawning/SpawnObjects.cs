@@ -6,6 +6,7 @@ public class SpawnObjects : MonoBehaviour{
     public GameObject laserPrefab;
     public GameObject coinPrefab;
     public GameObject coinCirclePrefab;
+    public GameObject laserHurdlePrefab;
     public GameObject rocketPrefab;
     public float respawnTime = 1.0f;
     private Vector2 screenBounds;
@@ -17,7 +18,12 @@ public class SpawnObjects : MonoBehaviour{
         
         float chance = Random.Range(0f, 1.0f);
         
-        if (chance < 0.3)
+        if (chance < 0.1)
+        {
+            GameObject objectToSpawn = Instantiate(laserHurdlePrefab) as GameObject;
+            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10,objectToSpawn.transform.position.y);
+        }
+        else if (chance <0.3)
         {
             GameObject objectToSpawn = Instantiate(dronePrefab) as GameObject;
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
