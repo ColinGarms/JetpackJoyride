@@ -5,7 +5,9 @@ namespace MainMenu
     {
         MainMenuSelected,
         LevelSelectionSelected,
-        LevelSelected
+        LevelSelected,
+        GamePaused,
+        GameContinued
 
     }
 

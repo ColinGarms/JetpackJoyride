@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
-using UnityEngine.Android;
 
-public class characterController : MonoBehaviour
+public class CharacterController : MonoBehaviour
 {
     [Serializable]private class CharacterSprites
 		
