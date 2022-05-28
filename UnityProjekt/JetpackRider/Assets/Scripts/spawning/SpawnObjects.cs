@@ -22,12 +22,13 @@ public class SpawnObjects : MonoBehaviour{
         if (chance < 0.1)
         {
             GameObject objectToSpawn = Instantiate(laserHurdlePrefab) as GameObject;
-            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10,objectToSpawn.transform.position.y);
+            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 20,objectToSpawn.transform.position.y);
         }
         else if (chance <0.2)
         {
             GameObject objectToSpawn = Instantiate(laserHolePrefab) as GameObject;
-            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 13, objectToSpawn.transform.position.y);
+            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, objectToSpawn.transform.position.y);
+            Debug.Log(screenBounds.x);
         }
         else if (chance <0.3)
         {

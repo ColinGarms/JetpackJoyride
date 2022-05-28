@@ -6548,7 +6548,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 6791280464477097114, guid: 4060a8dd0b33fd043a743db672463b97, type: 3}
   coinPrefab: {fileID: 7264918815620845427, guid: 3d811d696bd929843923e604ceff6ba0, type: 3}
   coinCirclePrefab: {fileID: 8215932823460404120, guid: 755904c0caecb7c4883190940c0bebd7, type: 3}
-  laserHurdlePrefab: {fileID: 6709808130077013053, guid: a362de0116a65a84696014d12f909b1d, type: 3}
+  laserHurdlePrefab: {fileID: 7608440083150028954, guid: a362de0116a65a84696014d12f909b1d, type: 3}
   laserHolePrefab: {fileID: 2132187782393302198, guid: b1de7777b4efdf94fb31125b23d9b469, type: 3}
   rocketPrefab: {fileID: 5099815581288641654, guid: a28a2aa647eb5284e9ae8b1f33d50aaa, type: 3}
   respawnTime: 3
