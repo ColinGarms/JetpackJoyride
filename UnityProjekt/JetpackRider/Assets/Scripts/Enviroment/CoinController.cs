@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
-	private int worth = 1;
 	[SerializeField] private CoinManager coinManager;
     [SerializeField] private SpriteRenderer coinSprite;
     [SerializeField] private Rigidbody2D rigidbody; 
@@ -37,7 +36,6 @@ public class CoinController : MonoBehaviour
 		//destroy on contact with player
         if (other.gameObject.CompareTag("Player"))
         {
-	        //coinManager.addAmount(worth);
 			Destroy(this.gameObject);
         }
     }
