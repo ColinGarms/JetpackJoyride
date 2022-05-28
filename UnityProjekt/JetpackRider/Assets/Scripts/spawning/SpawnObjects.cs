@@ -22,7 +22,7 @@ public class SpawnObjects : MonoBehaviour{
         if (chance < 0.1)
         {
             GameObject objectToSpawn = Instantiate(laserHurdlePrefab) as GameObject;
-            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 20,objectToSpawn.transform.position.y);
+            objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
         }
         else if (chance <0.2)
         {
@@ -53,7 +53,7 @@ public class SpawnObjects : MonoBehaviour{
         else if (chance <= 1)
         {
             GameObject objectToSpawn = Instantiate(laserPrefab) as GameObject;
-            objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
+            objectToSpawn.transform.position = new Vector2(screenBounds.x * 11, Random.Range(-screenBounds.y*3, screenBounds.y*3));
             objectToSpawn.transform.Rotate(new Vector3(0,0,Random.Range(0, 360)));
         }
 
