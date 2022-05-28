@@ -4,7 +4,7 @@ public class CoinController : MonoBehaviour
 {
 	[SerializeField] private CoinManager coinManager;
     [SerializeField] private SpriteRenderer coinSprite;
-    [SerializeField] private Rigidbody2D rigidbody; 
+    [SerializeField] private Rigidbody2D coinCigidbody; 
 	private Vector2 newVelocity;
 
 	public float speed = -3.0f;
@@ -14,7 +14,7 @@ public class CoinController : MonoBehaviour
     void Start()
     {
 	    //set the initial speed
-	    rigidbody.velocity = new Vector2(speed, 0);
+	    coinCigidbody.velocity = new Vector2(speed, 0);
 	    //?????
 	    screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
@@ -24,7 +24,7 @@ public class CoinController : MonoBehaviour
     void FixedUpdate()
     {
 	    //set velocity
-		rigidbody.velocity = new Vector2(speed, 0);
+		coinCigidbody.velocity = new Vector2(speed, 0);
 		if (transform.position.x <-10)
 		{
 			Destroy(this.gameObject);

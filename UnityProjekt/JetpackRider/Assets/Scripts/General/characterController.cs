@@ -16,7 +16,7 @@ public class CharacterController : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private SpriteRenderer characterSprite;
     [SerializeField] private CharacterSprites[] Characters;
-    [SerializeField] private Rigidbody2D rigidbody; 
+    [SerializeField] private Rigidbody2D characterRigidbody; 
     [SerializeField] private LifeTracker lifeTracker;
     private float  upForce = 0.5f;
     private float maxVelocityUp =5f;
@@ -30,7 +30,7 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        rigidbody.freezeRotation = true;
+        characterRigidbody.freezeRotation = true;
     }
     
     
@@ -60,7 +60,7 @@ public class CharacterController : MonoBehaviour
         }
         //walking
         //TODO: fix that when you are in the air, you can walk for a moment
-        else if (rigidbody.velocity.y==0)
+        else if (characterRigidbody.velocity.y==0)
         {
             characterSpriteWalkingIndex = (indexer) % (Characters[characterSpriteIndex].walkingSprites.Length);
             characterSprite.sprite = Characters[characterSpriteIndex].walkingSprites[characterSpriteWalkingIndex];
@@ -85,8 +85,8 @@ public class CharacterController : MonoBehaviour
     {
         if (boost)
         {
-            rigidbody.AddForce(Vector2.up* upForce, ForceMode2D.Impulse);
-            if (rigidbody.velocity.y > maxVelocityUp) rigidbody.velocity = new Vector2(rigidbody.velocity.x, maxVelocityUp);
+            characterRigidbody.AddForce(Vector2.up* upForce, ForceMode2D.Impulse);
+            if (characterRigidbody.velocity.y > maxVelocityUp) characterRigidbody.velocity = new Vector2(characterRigidbody.velocity.x, maxVelocityUp);
                 
         }
     }

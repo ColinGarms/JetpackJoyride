@@ -3,9 +3,9 @@ using MainMenu;
 
 public class ScreenHandler : StateHandler
 {
-    [SerializeField] private string name;
+    [SerializeField] private string handlerName;
     [SerializeField] private CanvasGroup canvasGroup;
-    public override string Name => name;
+    public override string Name => handlerName;
 
     public override void OnEnter<T>(T transition)
     {
