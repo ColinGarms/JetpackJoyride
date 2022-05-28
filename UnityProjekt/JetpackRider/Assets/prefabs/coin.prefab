@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 7264918815620845428}
   - component: {fileID: 7264918815620845431}
   - component: {fileID: 7264918815620845430}
-  - component: {fileID: 2604739926847741167}
-  - component: {fileID: 6159284410172482061}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -125,7 +123,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.53333336, y: 0.53333336}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -134,31 +132,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5223422, y: 0.59387296}
   m_EdgeRadius: 0
---- !u!114 &2604739926847741167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7264918815620845427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c94a245d2fdb81428d8b57ee5d5531f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinManager: {fileID: 6159284410172482061}
-  coinSprite: {fileID: 7264918815620845428}
-  rigidbody: {fileID: 7264918815620845431}
-  speed: -3
---- !u!114 &6159284410172482061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7264918815620845427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 940b6b7413dc18643a4849387757b975, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
