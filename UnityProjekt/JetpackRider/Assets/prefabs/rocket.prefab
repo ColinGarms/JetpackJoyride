@@ -95,11 +95,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5099815581288641654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29120738fce7b6d4c86981b35a48c9f7, type: 3}
+  m_Script: {fileID: 11500000, guid: b5b0f207cb1e5c740a3e9765ea515304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rocketSprite: {fileID: 5882003466935310651}
-  rigidbody: {fileID: 8969843927258596838}
+  rocketRigidbody: {fileID: 8969843927258596838}
   warningPrefab: {fileID: 4194442407112741372, guid: fce98c9408b4ca04a839ece7b8236239, type: 3}
   speed: -10
 --- !u!50 &8969843927258596838

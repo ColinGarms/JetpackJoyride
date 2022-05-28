@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnObjects : MonoBehaviour{
     public GameObject dronePrefab;
@@ -11,13 +12,22 @@ public class SpawnObjects : MonoBehaviour{
     public GameObject rocketPrefab;
     public float respawnTime = 1.0f;
     private Vector2 screenBounds;
-    
-    
+    [SerializeField] private Text seedInput;
+
+
+
+    public void GetSeed()
+    {
+        //Random.InitState(1634);
+        Random.InitState(int.Parse(seedInput.text));
+        
+    }
 
     private void SpawnObject()
     {
         
         float chance = Random.Range(0f, 1.0f);
+        
         
         if (chance < 0.1)
         {
@@ -40,7 +50,7 @@ public class SpawnObjects : MonoBehaviour{
             GameObject objectToSpawn = Instantiate(rocketPrefab) as GameObject;
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
         }
-       else if (chance < 0.6)
+        else if (chance < 0.6)
         {
             GameObject objectToSpawn = Instantiate(coinCirclePrefab) as GameObject;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*1, screenBounds.y*0.8f));
@@ -63,7 +73,7 @@ public class SpawnObjects : MonoBehaviour{
     // Start is called before the first frame update
     void Start()
     {
-        Random.InitState(1634);
+        GetSeed();
         screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(SpawnWave());
     }
