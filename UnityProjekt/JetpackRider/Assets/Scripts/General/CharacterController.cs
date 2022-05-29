@@ -30,6 +30,8 @@ namespace General
         private int characterSpriteBoostingIndex = 0;
         private int  characterSpriteFallingIndex= 0;
 
+        
+        
         void Start()
         {
             characterRigidbody.freezeRotation = true;

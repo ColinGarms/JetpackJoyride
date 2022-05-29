@@ -1,18 +1,26 @@
 ﻿using System.IO;
 using UnityEngine;
 
-public class SaveGameManager : MonoBehaviour
+public class SaveGameManager :MonoBehaviour
 {
+
+    private  string subPath = "SaveFiles/SaveGameFile";
     public SaveGame saveGame;
-    private string subPath = "SaveFiles/SaveGameFile";
+
+
+    /*public SaveGameManager()
+    {
+        saveGame =  LoadThisGame(subPath);
+    }*/
 
     void Start()
-    {
-        saveGame = LoadThisGame(subPath);
+    { 
+        saveGame =  LoadThisGame(subPath);
     }
 
     private void OnDisable()
     {
+        saveGame.coins +=publicInformation.CoinManager.getMoney();
         SaveThisGame();
     }
 

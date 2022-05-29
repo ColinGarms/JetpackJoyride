@@ -20,8 +20,6 @@ public class RocketController : MonoBehaviour
         screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         showWarning();
         time =  Time.time;
-        Debug.Log(time + 100);
-        
     }
 
     void Update()
