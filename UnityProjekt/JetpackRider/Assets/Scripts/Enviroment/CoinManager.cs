@@ -1,28 +1,26 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class CoinManager : MonoBehaviour
+public class CoinManager 
 
 {
     // Start is called before the first frame update
-   private int money;
+
+    private int money =0;
    //[SerializeField] private Text text ; 
    
-    void Start()
-    {
-        money = 0;
-    }
+
 
     // Update is called once per frame
     
     public void addAmount(int amount)
     {
         money += amount;
-        updateUI();
+        
     }
 
-    // change the coin number in the UI
-    private void updateUI()
+    public int getMoney()
     {
-      //TODO: implement change in userinterface, display money
+        return money;
     }
 }

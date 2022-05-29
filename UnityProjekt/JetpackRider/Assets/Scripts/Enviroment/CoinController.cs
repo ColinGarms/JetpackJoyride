@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
-	[SerializeField] private CoinManager coinManager;
-    [SerializeField] private SpriteRenderer coinSprite;
+	[SerializeField] private SpriteRenderer coinSprite;
     [SerializeField] private Rigidbody2D coinCigidbody; 
 	private Vector2 newVelocity;
 
+	private int worth = 1;
 	public float speed = -3.0f;
 	private Vector2 screenBounds;
     
@@ -35,7 +35,8 @@ public class CoinController : MonoBehaviour
     {
 		//destroy on contact with player
         if (other.gameObject.CompareTag("Player"))
-        {
+        {	
+	        publicInformation.CoinManager.addAmount(worth);
 			Destroy(this.gameObject);
         }
     }
