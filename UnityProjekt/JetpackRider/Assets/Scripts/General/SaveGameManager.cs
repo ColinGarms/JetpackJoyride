@@ -1,31 +1,27 @@
 ﻿using System.IO;
 using UnityEngine;
 
-public class SaveGameManager :MonoBehaviour
+public class SaveGameManager
 {
 
     private  string subPath = "SaveFiles/SaveGameFile";
     public SaveGame saveGame;
 
 
-    /*public SaveGameManager()
+    public SaveGameManager()
     {
-        saveGame =  LoadThisGame(subPath);
-    }*/
-
-    void Start()
-    { 
         saveGame =  LoadThisGame(subPath);
     }
 
-    private void OnDisable()
-    {
-        saveGame.coins +=publicInformation.CoinManager.getMoney();
-        SaveThisGame();
-    }
+
+
+
 
     public void SaveThisGame()
     {
+        saveGame.coins +=publicInformation.CoinManager.getMoney();
+        if (saveGame.maxDistance < publicInformation.getDistance())
+            saveGame.maxDistance = publicInformation.getDistance();
         SaveThisGame(saveGame, subPath);
     }
     

@@ -10,7 +10,7 @@ public class RocketController : MonoBehaviour
     private float time ;
     
 	
-    public float speed = -3.0f;
+    public float speed = -3.0f ;
     private Vector2 screenBounds;
 
     private bool move=false;
@@ -36,7 +36,7 @@ public class RocketController : MonoBehaviour
         if (move)
         {
             Destroy(objectToSpawn.gameObject);
-            rocketRigidbody.velocity = new Vector2(speed, 0);
+            rocketRigidbody.velocity = new Vector2(speed -publicInformation.getAdditionalSpeed(), 0);
             //?????
             screenBounds =
                 Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height,

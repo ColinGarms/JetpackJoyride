@@ -32,6 +32,7 @@ namespace General
 
         
         
+        
         void Start()
         {
             characterRigidbody.freezeRotation = true;

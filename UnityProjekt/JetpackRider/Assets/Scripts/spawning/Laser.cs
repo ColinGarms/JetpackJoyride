@@ -3,7 +3,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     
-    public float speed = -3.0f;
+    public float speed = -3.0f ;
     private Rigidbody2D rb;
     private Vector3 laserPos;
     
@@ -18,14 +18,14 @@ public class Laser : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(speed, 0);
+        rb.velocity = new Vector2(speed , 0);
     }
 
     // Update is called once per frame
     void Update()
     {
         laserPos = Camera.main.WorldToScreenPoint(transform.position);
-        rb.velocity = new Vector2(speed, 0);
+        rb.velocity = new Vector2(speed-(float)(publicInformation.getAdditionalSpeed()*0.5) , 0);
         
     }
 }

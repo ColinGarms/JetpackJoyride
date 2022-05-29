@@ -87,7 +87,7 @@ public abstract class StateMachine<Transition> : MonoBehaviour where Transition 
             return false;
         }
 
-        //Debug.Log($"{concreteTransition.from.Name} => {concreteTransition.to.Name} ({transition})");
+        Debug.Log($"{concreteTransition.from.Name} => {concreteTransition.to.Name} ({transition})");
 
         concreteTransition.from.OnExit(transition);
         CurrentState = concreteTransition.to;

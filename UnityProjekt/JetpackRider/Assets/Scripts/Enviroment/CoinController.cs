@@ -7,7 +7,7 @@ public class CoinController : MonoBehaviour
 	private Vector2 newVelocity;
 
 	private int worth = 1;
-	public float speed = -3.0f;
+	public float speed = -3.0f ;
 	private Vector2 screenBounds;
     
     // Start is called before the first frame update
@@ -19,12 +19,17 @@ public class CoinController : MonoBehaviour
 	    screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
+
+    void Update()
+    {
+	    worth = publicInformation.level;
+    }
     
     
     void FixedUpdate()
     {
 	    //set velocity
-		coinCigidbody.velocity = new Vector2(speed, 0);
+		coinCigidbody.velocity = new Vector2(speed -publicInformation.getAdditionalSpeed(), 0);
 		if (transform.position.x <-10)
 		{
 			Destroy(this.gameObject);
