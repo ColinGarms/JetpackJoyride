@@ -7,7 +7,7 @@ namespace MainMenu
 
         [field: SerializeField] public StateHandler MainMenuHandler { get; private set; }
         [field: SerializeField] public StateHandler SelectLevelHandler { get; private set; }
-       // [field: SerializeField] public StateHandler SelectSpecificLevelHandler { get; private set; }
+       
         [field: SerializeField] public StateHandler GameHandler { get; private set; }
         [field: SerializeField] public StateHandler PauseHandler { get; private set; }
 
@@ -17,10 +17,7 @@ namespace MainMenu
 
             // Main Menu -> Select Level
             AddTransition(MainMenuHandler, SelectLevelHandler, MenuTransitions.LevelSelectionSelected);
-
-            // Select Level -> Level X
-            // AddTransition(SelectLevelHandler, SelectSpecificLevelHandler, MenuTransitions.LevelSelected);
-
+            
             // Select Level -> Game
              AddTransition(SelectLevelHandler, GameHandler, MenuTransitions.LevelSelected); 
 

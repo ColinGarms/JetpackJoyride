@@ -1,6 +1,8 @@
 using System.Collections;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
 
 public class SpawnObjects : MonoBehaviour{
     public GameObject dronePrefab;
@@ -20,6 +22,7 @@ public class SpawnObjects : MonoBehaviour{
     {
         //Random.InitState(1634);
         Random.InitState(int.Parse(seedInput.text));
+        Debug.Log("Seed: " + int.Parse(seedInput.text));
         
     }
 
