@@ -8,7 +8,9 @@ public class publicInformation
     // Start is called before the first frame update
     public static CoinManager CoinManager = new CoinManager();
 
-    public SaveGameManager SaveGameManager = new SaveGameManager();
+    public static SaveGameManager SaveGameManager = new SaveGameManager();
+
+    public SaveGame saveGame;
     //public static SaveGameManager SaveGameManager= new SaveGameManager();
     public static int level;
 
@@ -24,5 +26,10 @@ public class publicInformation
         double timeSinceStart = Time.time;
         double distance = timeSinceStart*3;
         return (int)distance;
+    }
+
+    public static int getHighscore()
+    {
+        return (int)SaveGameManager.saveGame.maxDistance;
     }
 }

@@ -22,7 +22,7 @@ public class SpawnObjects : MonoBehaviour{
     {
         //Random.InitState(1634);
         Random.InitState(int.Parse(seedInput.text));
-        Debug.Log("Seed: " + int.Parse(seedInput.text));
+        //Debug.Log("Seed: " + int.Parse(seedInput.text));
         
     }
 

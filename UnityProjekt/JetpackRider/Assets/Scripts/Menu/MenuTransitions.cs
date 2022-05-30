@@ -1,14 +1,10 @@
-namespace MainMenu 
+public enum MenuTransitions 
 {
-
-    public enum MenuTransitions 
-    {
-        MainMenuSelected,
-        LevelSelectionSelected,
-        LevelSelected,
-        GamePaused,
-        GameContinued
-
-    }
+    MainMenuSelected,
+    LevelSelectionSelected,
+    LevelSelected,
+    GamePaused,
+    GameContinued,
+    PlayerDead
 
 }

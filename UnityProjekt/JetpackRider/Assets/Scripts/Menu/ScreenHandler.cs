@@ -1,5 +1,4 @@
 using UnityEngine;
-using MainMenu;
 
 public class ScreenHandler : StateHandler
 {
@@ -26,4 +25,8 @@ public class ScreenHandler : StateHandler
         OnExit(MenuTransitions.MainMenuSelected);
                 
     } 
+
+    public void PlayerDeath() {
+        OnEnter(MenuTransitions.PlayerDead);
+    }
 }

@@ -6,7 +6,7 @@ public class CoinManager
 {
     // Start is called before the first frame update
 
-    private int money =0;
+    private int money = 0;
    //[SerializeField] private Text text ; 
    
 
