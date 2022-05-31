@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.027459383, y: -0.054919094}
+  m_Offset: {x: 0.00037240982, y: -0.0031769872}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -131,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5223422, y: 0.59387296}
+  m_Size: {x: 0.5351877, y: 0.5346471}
   m_EdgeRadius: 0
 --- !u!114 &-5634745771165802925
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94cbd6b8c2cf914d830f9b74ed71ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinManager: {fileID: 0}
   coinSprite: {fileID: 7264918815620845428}
   coinCigidbody: {fileID: 7264918815620845431}
+  gameState: {fileID: 0}
   speed: -3

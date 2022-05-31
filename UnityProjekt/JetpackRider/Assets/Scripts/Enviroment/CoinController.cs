@@ -14,10 +14,8 @@ public class CoinController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-	    //set the initial speed
+	    // set the initial speed
 	    coinCigidbody.velocity = new Vector2(speed, 0);
-	    //?????
-	    //screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
 
@@ -29,7 +27,7 @@ public class CoinController : MonoBehaviour
     
     void FixedUpdate()
     {
-	    //set velocity
+	    // set the velocity according to the difficulty level
 		coinCigidbody.velocity = new Vector2(speed -gameState.getAdditionalSpeed(), 0);
 		if (transform.position.x <-10)
 		{
@@ -39,7 +37,7 @@ public class CoinController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-		//destroy on contact with player
+		// destroy on contact with player
         if (other.gameObject.CompareTag("Player"))
         {	
 	        gameState.CoinManager.addAmount(worth);

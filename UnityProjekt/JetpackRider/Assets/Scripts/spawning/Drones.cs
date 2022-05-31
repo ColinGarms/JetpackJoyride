@@ -2,26 +2,30 @@ using UnityEngine;
 
 public class Drones : MonoBehaviour{
 
+    // set the gamestate for the difficulty level
     public publicInformation gameState;
+    // set the base speed
     public float speed = -3.0f ;
     private Rigidbody2D rb;
     private Vector3 dronePos;
     
+    
+    // Delete the gameObject when the object leaves the screen
     public void OnBecameInvisible()
     {
         Destroy(this.gameObject);
     }
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        Debug.Log(speed);
         rb = this.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+
     void FixedUpdate()
     {
+        // set the velocity according to the difficulty level and fly in a sinus wave
         rb.velocity = new Vector2(speed-gameState.getAdditionalSpeed(), 2 * Mathf.Sin(Time.time * 3));
 
         dronePos = Camera.main.WorldToScreenPoint(transform.position);

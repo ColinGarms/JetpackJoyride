@@ -6,6 +6,7 @@ using Debug = UnityEngine.Debug;
 
 public class SpawnObjects : MonoBehaviour
 {
+    // Get all prefabs
     [SerializeField] private publicInformation gameState;
     [SerializeField] private GameObject dronePrefab;
     [SerializeField] private GameObject laserPrefab;
@@ -16,61 +17,68 @@ public class SpawnObjects : MonoBehaviour
     [SerializeField] private GameObject laserGroupTopPrefab;
     [SerializeField] private GameObject laserGroupBottomPrefab;
     [SerializeField] private GameObject rocketPrefab;
-    public float respawnTime = 3.0f;
-    private Vector2 screenBounds;
+    
+    // Get text field for the chosen seed
     [SerializeField] private Text seedInput;
+    
+    // base time for respawning
+    public float respawnTime = 0.1f;
+    private Vector2 screenBounds;
+    
 
 
-
+    // Getter for the seed
     public void GetSeed()
     {
-        //Random.InitState(1634);
         Random.InitState(int.Parse(seedInput.text));
-        //Debug.Log("Seed: " + int.Parse(seedInput.text));
-        
+
     }
 
+    // method to spawn a random prefab
     private float SpawnObject()
     {
-        
+        // randomizer for different prefabs
         float chance = Random.Range(0f, 1.0f);
-        
         
         if (chance < 0.05)
         {
+            // spawns laser group 
             GameObject objectToSpawn = Instantiate(laserHurdlePrefab) as GameObject;
             foreach (var laser in  objectToSpawn.GetComponentsInChildren<Laser>())
             {
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 5.0f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 3.0f;
 
         }
         if (chance < 0.1)
         {
+            // spawns laser group at the ceiling
             GameObject objectToSpawn = Instantiate(laserGroupTopPrefab) as GameObject;
             foreach (var laser in  objectToSpawn.GetComponentsInChildren<Laser>())
             {
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 1.5f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 1.2f;
 
         }
         if (chance < 0.15)
         {
+            // spawns laser group at the floor
             GameObject objectToSpawn = Instantiate(laserGroupBottomPrefab) as GameObject;
             foreach (var laser in  objectToSpawn.GetComponentsInChildren<Laser>())
             {
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 1.5f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 1.2f;
 
         }
         else if (chance <0.2)
         {
+            // spawns laser group at the ceiling and the floor
             GameObject objectToSpawn = Instantiate(laserHolePrefab) as GameObject;
             foreach (var laser in  objectToSpawn.GetComponentsInChildren<Laser>())
             {
@@ -78,10 +86,11 @@ public class SpawnObjects : MonoBehaviour
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, objectToSpawn.transform.position.y);
             Debug.Log(screenBounds.x);
-            return respawnTime* Random.Range(1.00f, 2.0f) * 1.5f;
+            return respawnTime* Random.Range(1.00f, 2.0f) * 1.2f;
         }
         else if (chance <0.3)
         {
+            // spawns a drone
             GameObject objectToSpawn = Instantiate(dronePrefab) as GameObject;
             objectToSpawn.GetComponent<Drones>().gameState=gameState;
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
@@ -89,6 +98,7 @@ public class SpawnObjects : MonoBehaviour
         }
         else if (chance <0.5)
         {
+            // spawns a rocket
             GameObject objectToSpawn = Instantiate(rocketPrefab) as GameObject;
             objectToSpawn.GetComponent<RocketController>().gameState=gameState;
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
@@ -96,17 +106,18 @@ public class SpawnObjects : MonoBehaviour
         }
         else if (chance < 0.6)
         {
+            // spawns a group of coins
             GameObject objectToSpawn = Instantiate(coinCirclePrefab) as GameObject;
-           
             foreach (var coinController in  objectToSpawn.GetComponentsInChildren<CoinController>())
             {
                 coinController.gameState=gameState;
             }
-            objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*1, screenBounds.y*0.8f));
+            objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
             return respawnTime* Random.Range(1.0f, 2.0f);
         }
         else if (chance <0.8)
         {
+            // spawns a single coin
             GameObject objectToSpawn = Instantiate(coinPrefab) as GameObject;
             objectToSpawn.GetComponent<CoinController>().gameState=gameState;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 10, Random.Range(-screenBounds.y*3, screenBounds.y*3));
@@ -114,17 +125,20 @@ public class SpawnObjects : MonoBehaviour
         }
         else if (chance <= 1)
         {
+            // spawns a laser
             GameObject objectToSpawn = Instantiate(laserPrefab) as GameObject;
             objectToSpawn.GetComponent<Laser>().gameState=gameState;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 11, Random.Range(-screenBounds.y*3, screenBounds.y*3));
             objectToSpawn.transform.Rotate(new Vector3(0,0,Random.Range(0, 360)));
             return respawnTime * Random.Range(1.0f, 2.0f);
         }
+        
+        // return in case something gets wrong
         return respawnTime* Random.Range(1.0f, 2.0f);
         
     }
 
-    // Start is called before the first frame update
+    // method to start spawning can be executed when level is selected
     public void StartSpawning()
     {
         GetSeed();
@@ -132,18 +146,17 @@ public class SpawnObjects : MonoBehaviour
         StartCoroutine(SpawnWave());
     }
 
+    // IENumerator to yield a return to wait a certain time after every spawn, waitTime is based on the prefab
     IEnumerator SpawnWave()
     {
-        var waitTime = 30.0f;
+        var waitTime = 10.0f;
         
+        // spawns enemies endlessly 
         while (true)
         {
             yield return null;
             waitTime = SpawnObject();
-            Debug.Log("waitTime: " + waitTime);
             yield return new WaitForSeconds(waitTime);
-            //yield return new WaitForSeconds(respawnTime* Random.Range(0.6f, 1.0f));
-            SpawnObject();
         }
     }
 }

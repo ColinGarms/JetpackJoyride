@@ -2,35 +2,35 @@ using UnityEngine;
 
 public class BackgroundScroller : MonoBehaviour
 {
+    // field for the scroll speed of the background image
+    [SerializeField] private float scrollSpeed;
+    
     private float length;
     private float startPosition;
-    public float scrollSpeed;
-    private Vector3 backgroundPos;
-    public float counter;
+    private float counter;
 
-
-
-
-
-// Start is called before the first frame update
+    
 void Start()
 {
+    // set startposition to determine position later
     startPosition = transform.position.x;
+    
+    // set the length according to the Sprite Renderer
     length = GetComponent<SpriteRenderer>().bounds.size.x;
 
 }
 
-// Update is called once per frame
+
 void Update()
 {
-    float temp = Camera.main.transform.position.x * (1 - scrollSpeed);
+    // set the scroll speed according to the background image
     float distance =Time.time * 5.0f * -scrollSpeed;
-
-    backgroundPos = Camera.main.WorldToScreenPoint(transform.position);
-
+    
+    // The background image position will be put 2 lengths to the right to scroll endlessly
     transform.position = new Vector3(startPosition + distance + length * (int)counter, transform.position.y, transform.position.z);
 
-    counter = -(int)distance / length + 0.10f;
+    // counts how many times the background image has traveled its own length to determine when to change position
+    counter = -(int)distance / length + 0.05f;
 
 
 
