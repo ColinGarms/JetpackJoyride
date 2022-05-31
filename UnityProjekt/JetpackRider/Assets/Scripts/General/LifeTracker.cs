@@ -6,6 +6,7 @@ public class LifeTracker : MonoBehaviour
     // life points with valid range
     [SerializeField][Range(0, 2)] private int lifePoints;
     [SerializeField] private CanvasGroup deathScreen;
+    [SerializeField] private publicInformation gameState;
 
 
     //turn off all lifepoint images that are not needed 
@@ -31,10 +32,12 @@ public class LifeTracker : MonoBehaviour
         //check for game over condition
         if (lifePoints <= 0)
         {
+            gameState.SaveGameManager.SaveThisGame();
             Time.timeScale = 0;
             deathScreen.alpha = 1;
             deathScreen.interactable = true;
-            deathScreen.blocksRaycasts = true;            
+            deathScreen.blocksRaycasts = true;  
+            
         }
                  
     }

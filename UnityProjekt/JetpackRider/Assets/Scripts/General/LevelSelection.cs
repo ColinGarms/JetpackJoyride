@@ -3,14 +3,16 @@
 namespace General
 {
     public class LevelSelection :MonoBehaviour
+
     {
+        [SerializeField] private publicInformation gameState;
         [SerializeField] private GameObject level1;
         [SerializeField] private GameObject level2;
         [SerializeField] private GameObject level3;
         
         public void setLevel(int level)
         {
-            publicInformation.level = level;
+            gameState.level = level;
         }
         public void setLevel1()
         {

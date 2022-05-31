@@ -1,27 +1,33 @@
 ﻿using System.IO;
 using UnityEngine;
 
-public class SaveGameManager
+public class SaveGameManager 
 {
-
+    private publicInformation gameState;
     private  string subPath = "SaveFiles/SaveGameFile";
     public SaveGame saveGame;
+    
 
 
-    public SaveGameManager()
+    public SaveGameManager( publicInformation gameState)
     {
         saveGame =  LoadThisGame(subPath);
+        this.gameState = gameState;
     }
+    
 
 
-
+    
 
 
     public void SaveThisGame()
     {
-        saveGame.coins +=publicInformation.CoinManager.getMoney();
-        if (saveGame.maxDistance < publicInformation.getDistance())
-            saveGame.maxDistance = publicInformation.getDistance();
+        saveGame.coins +=gameState.CoinManager.getMoney();
+        if (saveGame.maxDistance < gameState.getDistance())
+        {
+            saveGame.maxDistance = gameState.getDistance();
+        }
+            
         SaveThisGame(saveGame, subPath);
     }
     
@@ -46,6 +52,11 @@ public class SaveGameManager
             var jsonString = streamReader.ReadToEnd();
             return JsonUtility.FromJson<SaveGame>(jsonString);
         }
+    }
+
+    public int getHighScore()
+    {
+        return (int) saveGame.maxDistance;
     }
 
 

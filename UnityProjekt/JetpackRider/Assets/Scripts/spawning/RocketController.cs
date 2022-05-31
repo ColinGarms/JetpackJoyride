@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class RocketController : MonoBehaviour
 {
+    public publicInformation gameState;
     [SerializeField] private SpriteRenderer rocketSprite;
     [SerializeField] private Rigidbody2D rocketRigidbody; 
     [SerializeField] private GameObject warningPrefab;
@@ -36,7 +37,7 @@ public class RocketController : MonoBehaviour
         if (move)
         {
             Destroy(objectToSpawn.gameObject);
-            rocketRigidbody.velocity = new Vector2(speed -publicInformation.getAdditionalSpeed(), 0);
+            rocketRigidbody.velocity = new Vector2(speed -gameState.getAdditionalSpeed(), 0);
             //?????
             screenBounds =
                 Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height,

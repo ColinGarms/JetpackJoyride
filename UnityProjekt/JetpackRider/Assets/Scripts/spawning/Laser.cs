@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    
+    public publicInformation gameState;
     public float speed = -3.0f ;
     private Rigidbody2D rb;
     private Vector3 laserPos;
+   
     
     public void OnBecameInvisible()
     {
@@ -25,7 +26,7 @@ public class Laser : MonoBehaviour
     void Update()
     {
         laserPos = Camera.main.WorldToScreenPoint(transform.position);
-        rb.velocity = new Vector2(speed-(float)(publicInformation.getAdditionalSpeed()*0.5) , 0);
+        rb.velocity = new Vector2(speed-(float)(gameState.getAdditionalSpeed()*0.5) , 0);
         
     }
 }

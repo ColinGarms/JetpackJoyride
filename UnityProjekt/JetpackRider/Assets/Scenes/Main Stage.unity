@@ -1149,6 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d4c6f97a8642f2841a11b5f13ba645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: {fileID: 1787621831}
   level1: {fileID: 1308629543}
   level2: {fileID: 1462271485}
   level3: {fileID: 421592884}
@@ -1174,7 +1175,6 @@ GameObject:
   m_Component:
   - component: {fileID: 143372708}
   - component: {fileID: 143372710}
-  - component: {fileID: 143372711}
   - component: {fileID: 143372709}
   m_Layer: 5
   m_Name: 'Points '
@@ -1244,19 +1244,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143372707}
   m_CullTransparentMesh: 1
---- !u!114 &143372711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143372707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf9c43cd0394cf496a96512605da347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinText: {fileID: 143372709}
 --- !u!1 &149014403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceText: {fileID: 154928030}
+  gameState: {fileID: 1787621831}
 --- !u!222 &154928032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5896,6 +5884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d4c6f97a8642f2841a11b5f13ba645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: {fileID: 1787621831}
   level1: {fileID: 1308629543}
   level2: {fileID: 1462271485}
   level3: {fileID: 421592884}
@@ -7364,6 +7353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceText: {fileID: 617560999}
+  gameState: {fileID: 1787621831}
 --- !u!1 &629684850
 GameObject:
   m_ObjectHideFlags: 0
@@ -8899,7 +8889,6 @@ GameObject:
   - component: {fileID: 821591976}
   - component: {fileID: 821591978}
   - component: {fileID: 821591977}
-  - component: {fileID: 821591979}
   m_Layer: 5
   m_Name: CurrentCoins
   m_TagString: Untagged
@@ -8968,19 +8957,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821591975}
   m_CullTransparentMesh: 1
---- !u!114 &821591979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821591975}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf9c43cd0394cf496a96512605da347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinText: {fileID: 821591977}
 --- !u!1 &825562257
 GameObject:
   m_ObjectHideFlags: 0
@@ -12343,6 +12319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceText: {fileID: 1090367379}
+  gameState: {fileID: 1787621831}
 --- !u!1 &1109204167
 GameObject:
   m_ObjectHideFlags: 0
@@ -14479,6 +14456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 1
   deathScreen: {fileID: 840435481}
+  gameState: {fileID: 0}
 --- !u!1 &1335828020
 GameObject:
   m_ObjectHideFlags: 0
@@ -15592,6 +15570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675f3eee5a91a184d8350477edbafcf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: {fileID: 0}
   dronePrefab: {fileID: 2864524762660670861, guid: 5beb0a1e3dc083f428c02dd4d618a237, type: 3}
   laserPrefab: {fileID: 6791280464477097114, guid: 4060a8dd0b33fd043a743db672463b97, type: 3}
   coinPrefab: {fileID: 7264918815620845427, guid: 3d811d696bd929843923e604ceff6ba0, type: 3}
@@ -16277,6 +16256,98 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1787621830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1787621832}
+  - component: {fileID: 1787621831}
+  m_Layer: 0
+  m_Name: gameState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1787621831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787621830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee9b46bf86cea14fa203e756eafcede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinManager: {fileID: 0}
+  level: 0
+--- !u!4 &1787621832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787621830}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.581848, y: -0.9336451, z: -0.65312314}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1793031449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793031451}
+  - component: {fileID: 1793031450}
+  m_Layer: 0
+  m_Name: CoinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1793031450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793031449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0b3039c5ded771459a490010f92c093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - {fileID: 821591977}
+  - {fileID: 143372709}
+  gameState: {fileID: 1787621831}
+--- !u!4 &1793031451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793031449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.581848, y: -0.9336451, z: -0.65312314}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1794659193
 GameObject:
   m_ObjectHideFlags: 0
@@ -17801,6 +17872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d4c6f97a8642f2841a11b5f13ba645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: {fileID: 1787621831}
   level1: {fileID: 1308629543}
   level2: {fileID: 1462271485}
   level3: {fileID: 421592884}

@@ -6,9 +6,10 @@ namespace Enviroment
     public class HighScoreUIWriter : MonoBehaviour
     {
         [SerializeField] private Text distanceText;
+        [SerializeField] private publicInformation gameState;
         private void Update()
         {
-            int distance = publicInformation.getHighscore();
+            int distance = gameState.SaveGameManager.getHighScore();
             distanceText.text = distance.ToString()+"m";
 
         }

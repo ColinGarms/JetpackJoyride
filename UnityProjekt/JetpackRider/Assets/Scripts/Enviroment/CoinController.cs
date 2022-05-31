@@ -5,6 +5,7 @@ public class CoinController : MonoBehaviour
 	[SerializeField] private SpriteRenderer coinSprite;
     [SerializeField] private Rigidbody2D coinCigidbody; 
 	private Vector2 newVelocity;
+	public publicInformation gameState;
 
 	private int worth = 1;
 	public float speed = -3.0f ;
@@ -22,14 +23,14 @@ public class CoinController : MonoBehaviour
 
     void Update()
     {
-	    worth = publicInformation.level;
+	    worth = gameState.level;
     }
     
     
     void FixedUpdate()
     {
 	    //set velocity
-		coinCigidbody.velocity = new Vector2(speed -publicInformation.getAdditionalSpeed(), 0);
+		coinCigidbody.velocity = new Vector2(speed -gameState.getAdditionalSpeed(), 0);
 		if (transform.position.x <-10)
 		{
 			Destroy(this.gameObject);
@@ -41,7 +42,7 @@ public class CoinController : MonoBehaviour
 		//destroy on contact with player
         if (other.gameObject.CompareTag("Player"))
         {	
-	        publicInformation.CoinManager.addAmount(worth);
+	        gameState.CoinManager.addAmount(worth);
 			Destroy(this.gameObject);
         }
     }
