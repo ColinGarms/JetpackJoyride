@@ -14456,7 +14456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 1
   deathScreen: {fileID: 840435481}
-  gameState: {fileID: 0}
+  gameState: {fileID: 1787621831}
 --- !u!1 &1335828020
 GameObject:
   m_ObjectHideFlags: 0
@@ -15570,7 +15570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 675f3eee5a91a184d8350477edbafcf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameState: {fileID: 0}
+  gameState: {fileID: 1787621831}
   dronePrefab: {fileID: 2864524762660670861, guid: 5beb0a1e3dc083f428c02dd4d618a237, type: 3}
   laserPrefab: {fileID: 6791280464477097114, guid: 4060a8dd0b33fd043a743db672463b97, type: 3}
   coinPrefab: {fileID: 7264918815620845427, guid: 3d811d696bd929843923e604ceff6ba0, type: 3}
@@ -16285,7 +16285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee9b46bf86cea14fa203e756eafcede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinManager: {fileID: 0}
+  CoinManager: {fileID: 1793031450}
   level: 0
 --- !u!4 &1787621832
 Transform:
