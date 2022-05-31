@@ -11,6 +11,10 @@ public class Laser : MonoBehaviour
     public void OnBecameInvisible()
     {
         Destroy(this.gameObject);
+        if (transform.parent != null && transform.parent.childCount == 1)
+        {
+            Destroy(transform.parent.gameObject);
+        }
     }
     
     
@@ -23,7 +27,7 @@ public class Laser : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         laserPos = Camera.main.WorldToScreenPoint(transform.position);
         rb.velocity = new Vector2(speed-(float)(gameState.getAdditionalSpeed()*0.5) , 0);

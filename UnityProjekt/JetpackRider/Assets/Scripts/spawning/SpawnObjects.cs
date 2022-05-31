@@ -16,7 +16,7 @@ public class SpawnObjects : MonoBehaviour
     [SerializeField] private GameObject laserGroupTopPrefab;
     [SerializeField] private GameObject laserGroupBottomPrefab;
     [SerializeField] private GameObject rocketPrefab;
-    public float respawnTime = 5.0f;
+    public float respawnTime = 3.0f;
     private Vector2 screenBounds;
     [SerializeField] private Text seedInput;
 

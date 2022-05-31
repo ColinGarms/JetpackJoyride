@@ -17,7 +17,7 @@ public class CoinController : MonoBehaviour
 	    //set the initial speed
 	    coinCigidbody.velocity = new Vector2(speed, 0);
 	    //?????
-	    screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+	    //screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
     }
 
 

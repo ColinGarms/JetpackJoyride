@@ -20,7 +20,7 @@ public class Drones : MonoBehaviour{
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         rb.velocity = new Vector2(speed-gameState.getAdditionalSpeed(), 2 * Mathf.Sin(Time.time * 3));
 
