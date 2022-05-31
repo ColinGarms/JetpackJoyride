@@ -5,7 +5,7 @@ public class CoinController : MonoBehaviour
 	[SerializeField] private SpriteRenderer coinSprite;
     [SerializeField] private Rigidbody2D coinCigidbody; 
 	private Vector2 newVelocity;
-	public publicInformation gameState;
+	public PublicInformation gameState;
 
 	private int worth = 1;
 	public float speed = -3.0f ;
@@ -18,12 +18,10 @@ public class CoinController : MonoBehaviour
 	    coinCigidbody.velocity = new Vector2(speed, 0);
     }
 
-
     void Update()
     {
 	    worth = gameState.level;
     }
-    
     
     void FixedUpdate()
     {

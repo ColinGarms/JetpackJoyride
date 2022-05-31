@@ -5,11 +5,9 @@ using UnityEngine;
 
     [field: SerializeField] public StateHandler MainMenuHandler { get; private set; }
     [field: SerializeField] public StateHandler SelectLevelHandler { get; private set; }
-    
     [field: SerializeField] public StateHandler GameHandler { get; private set; }
     [field: SerializeField] public StateHandler PauseHandler { get; private set; }
     [field: SerializeField] public StateHandler DeathHandler { get; private set; }
-
 
     private void Awake() 
     {

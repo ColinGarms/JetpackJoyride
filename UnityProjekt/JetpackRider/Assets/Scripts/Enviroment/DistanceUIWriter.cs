@@ -6,7 +6,7 @@ namespace Enviroment
     public class DistanceUIWriter : MonoBehaviour
     {
         [SerializeField] private Text distanceText;
-        [SerializeField] private publicInformation gameState;
+        [SerializeField] private PublicInformation gameState;
         private void Update()
         {
             int distance = gameState.getDistance();

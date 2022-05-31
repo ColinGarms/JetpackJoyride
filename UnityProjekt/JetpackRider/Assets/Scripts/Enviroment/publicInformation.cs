@@ -3,11 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class publicInformation : MonoBehaviour//change to gamestate
+public class PublicInformation : MonoBehaviour//change to gamestate
 {
-    // Start is called before the first frame update
-    //public static CoinManager CoinManager = new CoinManager();
-
     public  SaveGameManager SaveGameManager;
     public CoinManager CoinManager;
 
@@ -17,7 +14,6 @@ public class publicInformation : MonoBehaviour//change to gamestate
          
      }
 
-     //public static SaveGameManager SaveGameManager= new SaveGameManager();
     public  int level;
 
     public  float getAdditionalSpeed()

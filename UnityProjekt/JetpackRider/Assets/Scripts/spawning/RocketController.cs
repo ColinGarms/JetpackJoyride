@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RocketController : MonoBehaviour
 {
-    public publicInformation gameState;
+    public PublicInformation gameState;
     [SerializeField] private SpriteRenderer rocketSprite;
     [SerializeField] private Rigidbody2D rocketRigidbody; 
     [SerializeField] private GameObject warningPrefab;
@@ -38,7 +38,6 @@ public class RocketController : MonoBehaviour
         {
             Destroy(objectToSpawn.gameObject);
             rocketRigidbody.velocity = new Vector2(speed -gameState.getAdditionalSpeed(), 0);
-            //?????
             screenBounds =
                 Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height,
                     Camera.main.transform.position.z));
@@ -59,6 +58,5 @@ public class RocketController : MonoBehaviour
         
         objectToSpawn = Instantiate(warningPrefab) as GameObject;
         objectToSpawn.transform.position = new Vector2(screenBounds.x * 8, this.transform.position.y);
-        //objectToSpawn.GetComponent<Rigidbody2D>().position = new Vector2(screenBounds.x * 9, this.rigidbody.position.y);
     }
 }

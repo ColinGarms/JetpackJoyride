@@ -3,21 +3,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CoinManager : MonoBehaviour
-
 {
-    // Start is called before the first frame update
-
     private int money = 0;
-   [SerializeField] private Text[] texts ;
-   [SerializeField] private publicInformation gameState;
-
-   private void Start()
-   {
-       
-   }
-
-
-   // Update is called once per frame
+    [SerializeField] private Text[] texts;
+    [SerializeField] private PublicInformation gameState;
     
     public void addAmount(int amount)
     {

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     // set the gamestate for the difficulty level
-    public publicInformation gameState;
+    public PublicInformation gameState;
     // set the base speed
     public float speed = -3.0f ;
     private Rigidbody2D rb;
@@ -19,10 +19,7 @@ public class Laser : MonoBehaviour
             Destroy(transform.parent.gameObject);
         }
     }
-    
-    
-    
-    // 
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();

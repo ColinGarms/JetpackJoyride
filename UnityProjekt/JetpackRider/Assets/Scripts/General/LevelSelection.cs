@@ -5,7 +5,7 @@ namespace General
     public class LevelSelection :MonoBehaviour
 
     {
-        [SerializeField] private publicInformation gameState;
+        [SerializeField] private PublicInformation gameState;
         [SerializeField] private GameObject level1;
         [SerializeField] private GameObject level2;
         [SerializeField] private GameObject level3;

@@ -29,15 +29,11 @@ namespace General
         private int characterSpriteWalkingIndex = 0;
         private int characterSpriteBoostingIndex = 0;
         private int  characterSpriteFallingIndex= 0;
-
-        
-        
         
         void Start()
         {
             characterRigidbody.freezeRotation = true;
         }
-    
     
         // Update is called once per frame
         void Update()
@@ -55,8 +51,6 @@ namespace General
         
             var indexer = (int) (Time.time / 0.100f);
        
-        
-        
             //boosting
             if (boost)
             {
@@ -76,7 +70,6 @@ namespace General
                 characterSpriteFallingIndex = (indexer) % (Characters[characterSpriteIndex].fallingSprites.Length);
                 characterSprite.sprite = Characters[characterSpriteIndex].fallingSprites[characterSpriteFallingIndex];
             }
-        
 
         }
 

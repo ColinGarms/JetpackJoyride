@@ -6,7 +6,7 @@ public class LifeTracker : MonoBehaviour
     // life points with valid range
     [SerializeField][Range(0, 2)] private int lifePoints;
     [SerializeField] private CanvasGroup deathScreen;
-    [SerializeField] private publicInformation gameState;
+    [SerializeField] private PublicInformation gameState;
 
 
     //turn off all lifepoint images that are not needed 

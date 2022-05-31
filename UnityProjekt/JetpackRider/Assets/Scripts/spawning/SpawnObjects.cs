@@ -7,7 +7,7 @@ using Debug = UnityEngine.Debug;
 public class SpawnObjects : MonoBehaviour
 {
     // Get all prefabs
-    [SerializeField] private publicInformation gameState;
+    [SerializeField] private PublicInformation gameState;
     [SerializeField] private GameObject dronePrefab;
     [SerializeField] private GameObject laserPrefab;
     [SerializeField] private GameObject coinPrefab;
@@ -25,8 +25,6 @@ public class SpawnObjects : MonoBehaviour
     public float respawnTime = 0.1f;
     private Vector2 screenBounds;
     
-
-
     // Getter for the seed
     public void GetSeed()
     {

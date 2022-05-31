@@ -3,12 +3,11 @@ using UnityEngine;
 public class Drones : MonoBehaviour{
 
     // set the gamestate for the difficulty level
-    public publicInformation gameState;
+    public PublicInformation gameState;
     // set the base speed
     public float speed = -3.0f ;
     private Rigidbody2D rb;
     private Vector3 dronePos;
-    
     
     // Delete the gameObject when the object leaves the screen
     public void OnBecameInvisible()
@@ -16,12 +15,10 @@ public class Drones : MonoBehaviour{
         Destroy(this.gameObject);
     }
 
-
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
     }
-
 
     void FixedUpdate()
     {

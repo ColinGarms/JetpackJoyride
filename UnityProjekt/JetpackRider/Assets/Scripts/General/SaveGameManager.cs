@@ -3,22 +3,15 @@ using UnityEngine;
 
 public class SaveGameManager 
 {
-    private publicInformation gameState;
+    private PublicInformation gameState;
     private  string subPath = "SaveFiles/SaveGameFile";
     public SaveGame saveGame;
-    
-
-
-    public SaveGameManager( publicInformation gameState)
+ 
+    public SaveGameManager( PublicInformation gameState)
     {
         saveGame =  LoadThisGame(subPath);
         this.gameState = gameState;
     }
-    
-
-
-    
-
 
     public void SaveThisGame()
     {
@@ -30,8 +23,6 @@ public class SaveGameManager
             
         SaveThisGame(saveGame, subPath);
     }
-    
-    
     
     private static void SaveThisGame(SaveGame data, string subPath)
     {
@@ -58,6 +49,5 @@ public class SaveGameManager
     {
         return (int) saveGame.maxDistance;
     }
-
 
 }
