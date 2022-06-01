@@ -23,14 +23,17 @@ public class CoinController : MonoBehaviour
 	    worth = gameState.level;
     }
     
+    
+    // Delete the gameObject when the object leaves the screen
+    public void OnBecameInvisible()
+    {
+	    Destroy(this.gameObject);
+    }
+    
     void FixedUpdate()
     {
 	    // set the velocity according to the difficulty level
 		coinCigidbody.velocity = new Vector2(speed -gameState.getAdditionalSpeed(), 0);
-		if (transform.position.x <-10)
-		{
-			Destroy(this.gameObject);
-		}
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -1940,7 +1940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.5
 --- !u!212 &184019508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.15
 --- !u!212 &270960510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3128,7 +3128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.9
 --- !u!212 &275639106
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3304,7 +3304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.4
 --- !u!212 &292593134
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3401,7 +3401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.9
 --- !u!212 &294858514
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3983,7 +3983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.2
 --- !u!212 &393713358
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4526,7 +4526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &421592885
 Transform:
   m_ObjectHideFlags: 0
@@ -7729,7 +7729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.2
 --- !u!212 &661436702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8495,7 +8495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.7
 --- !u!212 &743451677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9346,7 +9346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.9
 --- !u!212 &860598784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9972,7 +9972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.15
 --- !u!212 &869014979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10645,7 +10645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.4
 --- !u!212 &934030475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11090,7 +11090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.5
 --- !u!212 &977822865
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12480,7 +12480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.9
 --- !u!212 &1118051998
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13295,7 +13295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.2
 --- !u!212 &1219996044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14402,7 +14402,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.042288415, y: 0}
+  m_Offset: {x: 0.03326358, y: -0.012208}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -14413,7 +14413,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23542316, y: 0.45}
+  m_Size: {x: 0.20293355, y: 0.425584}
   m_EdgeRadius: 0
 --- !u!114 &1329737776
 MonoBehaviour:
@@ -15322,7 +15322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.7
 --- !u!212 &1583111984
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16731,7 +16731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.4
 --- !u!212 &1834293456
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17018,7 +17018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.5
+  scrollSpeed: 0.7
 --- !u!212 &1883792025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17115,7 +17115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.5
 --- !u!212 &1900751948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17901,7 +17901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.5
 --- !u!212 &1961670008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18300,7 +18300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.15
 --- !u!212 &1998374774
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18397,7 +18397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.15
 --- !u!212 &2023816260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19293,7 +19293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.1
+  scrollSpeed: 0.2
 --- !u!212 &2126838245
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19558,7 +19558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5aa4257c1d6534f9ef58fdb9b6d240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 0.3
+  scrollSpeed: 0.4
 --- !u!212 &2141267352
 SpriteRenderer:
   m_ObjectHideFlags: 0

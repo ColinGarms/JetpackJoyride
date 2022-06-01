@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PublicInformation : MonoBehaviour//change to gamestate
+//change to gamestate
+public class PublicInformation : MonoBehaviour
 {
     public  SaveGameManager SaveGameManager;
     public CoinManager CoinManager;
