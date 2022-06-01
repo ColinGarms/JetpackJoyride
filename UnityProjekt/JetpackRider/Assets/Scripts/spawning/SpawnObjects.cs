@@ -83,7 +83,6 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, objectToSpawn.transform.position.y);
-            Debug.Log("Its a HOLDE");
             return respawnTime* Random.Range(1.00f, 2.0f) * 1.2f;
         }
         else if (chance <0.3)
@@ -154,7 +153,6 @@ public class SpawnObjects : MonoBehaviour
         {
             yield return null;
             waitTime = SpawnObject();
-            Debug.Log(waitTime);
             yield return new WaitForSeconds(waitTime);
         }
     }
