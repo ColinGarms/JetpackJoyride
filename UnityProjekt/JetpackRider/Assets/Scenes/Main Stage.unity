@@ -4526,7 +4526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &421592885
 Transform:
   m_ObjectHideFlags: 0
@@ -15547,7 +15547,6 @@ MonoBehaviour:
   laserGroupBottomPrefab: {fileID: 7032321854818423715, guid: e0d263bdee59e7e4f862e181147d5f64, type: 3}
   rocketPrefab: {fileID: 5099815581288641654, guid: a28a2aa647eb5284e9ae8b1f33d50aaa, type: 3}
   seedInput: {fileID: 2070074591}
-  respawnTime: 3
 --- !u!4 &1597381780
 Transform:
   m_ObjectHideFlags: 0

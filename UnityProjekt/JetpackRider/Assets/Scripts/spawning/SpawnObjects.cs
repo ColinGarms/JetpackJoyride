@@ -22,11 +22,11 @@ public class SpawnObjects : MonoBehaviour
     [SerializeField] private Text seedInput;
     
     // base time for respawning
-    public float respawnTime = 0.1f;
+    private float respawnTime = 0.8f;
     private Vector2 screenBounds;
     
     // Getter for the seed
-    public void GetSeed()
+    private void GetSeed()
     {
         Random.InitState(int.Parse(seedInput.text));
 
@@ -59,7 +59,7 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 1.2f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 2.2f;
 
         }
         if (chance < 0.15)
@@ -71,7 +71,7 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 1.2f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 2.2f;
 
         }
         else if (chance <0.2)
@@ -128,7 +128,7 @@ public class SpawnObjects : MonoBehaviour
             objectToSpawn.GetComponent<Laser>().gameState=gameState;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 11, Random.Range(-screenBounds.y*3, screenBounds.y*3));
             objectToSpawn.transform.Rotate(new Vector3(0,0,Random.Range(0, 360)));
-            return respawnTime * Random.Range(1.0f, 2.0f);
+            return respawnTime * Random.Range(1.0f, 2.0f)* 1.4f;
         }
         
         // return in case something gets wrong
@@ -136,7 +136,7 @@ public class SpawnObjects : MonoBehaviour
         
     }
 
-    // method to start spawning can be executed when level is selected
+    // method to StartSpawning will be executed when level is selected
     public void StartSpawning()
     {
         GetSeed();
@@ -154,6 +154,7 @@ public class SpawnObjects : MonoBehaviour
         {
             yield return null;
             waitTime = SpawnObject();
+            Debug.Log(waitTime);
             yield return new WaitForSeconds(waitTime);
         }
     }
