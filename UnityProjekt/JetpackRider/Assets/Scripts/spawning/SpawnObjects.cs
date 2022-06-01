@@ -47,7 +47,7 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 3.0f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 3.5f;
 
         }
         if (chance < 0.1)
@@ -59,7 +59,7 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 2.2f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 3.5f;
 
         }
         if (chance < 0.15)
@@ -71,7 +71,7 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 15,objectToSpawn.transform.position.y);
-            return respawnTime * Random.Range(1.0f, 2.0f) * 2.2f;
+            return respawnTime * Random.Range(1.0f, 2.0f) * 3.5f;
 
         }
         else if (chance <0.2)
@@ -83,7 +83,7 @@ public class SpawnObjects : MonoBehaviour
                 laser.gameState=gameState;
             }
             objectToSpawn.transform.position  = new Vector2(screenBounds.x * 10, objectToSpawn.transform.position.y);
-            Debug.Log(screenBounds.x);
+            Debug.Log("Its a HOLDE");
             return respawnTime* Random.Range(1.00f, 2.0f) * 1.2f;
         }
         else if (chance <0.3)
@@ -128,7 +128,7 @@ public class SpawnObjects : MonoBehaviour
             objectToSpawn.GetComponent<Laser>().gameState=gameState;
             objectToSpawn.transform.position = new Vector2(screenBounds.x * 11, Random.Range(-screenBounds.y*3, screenBounds.y*3));
             objectToSpawn.transform.Rotate(new Vector3(0,0,Random.Range(0, 360)));
-            return respawnTime * Random.Range(1.0f, 2.0f)* 1.4f;
+            return respawnTime * Random.Range(1.0f, 2.0f)* 1.6f;
         }
         
         // return in case something gets wrong

@@ -19,7 +19,7 @@ public class BackgroundScroller : MonoBehaviour
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // set the scroll speed according to the background image
         float distance =Time.time * 5.0f * -scrollSpeed;
