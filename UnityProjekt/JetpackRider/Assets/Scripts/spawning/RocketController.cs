@@ -6,6 +6,7 @@ public class RocketController : MonoBehaviour
     [SerializeField] private SpriteRenderer rocketSprite;
     [SerializeField] private Rigidbody2D rocketRigidbody; 
     [SerializeField] private GameObject warningPrefab;
+    //warning sign
     private GameObject objectToSpawn; 
     private Vector2 newVelocity;
     private float time ;
@@ -18,13 +19,16 @@ public class RocketController : MonoBehaviour
 
     void Start()
     {
+        //spawn the warning sign
         screenBounds = Camera.main.ScreenToViewportPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         showWarning();
+        //remember the time then the rocket is spawned
         time =  Time.time;
     }
 
     void Update()
     {
+        //after 2 secs the rocket will move
         if (time + 2 < Time.time )
         {
             move = true;
@@ -33,7 +37,7 @@ public class RocketController : MonoBehaviour
 
     private void FixedUpdate()
     {
-
+        //when waiting time is over, rocket moves, warning sign is destroid
         if (move)
         {
             Destroy(objectToSpawn.gameObject);
@@ -44,6 +48,7 @@ public class RocketController : MonoBehaviour
             
         }
         
+        //remove rocket when it is a bit outside the screen
         if (transform.position.x <-10)
         {
             Destroy(this.gameObject);
@@ -51,6 +56,7 @@ public class RocketController : MonoBehaviour
          
     }
 
+    //spawns a warning sign at side of the screen the same height where the rocket will come 
     private void showWarning()
     {
         float yPosition = rocketRigidbody.position.y;

@@ -5,6 +5,7 @@ namespace General
 {
     public class CharacterController : MonoBehaviour
     {
+        //saves the animation sprites of the character
         [Serializable]private class CharacterSprites
 		
         {
@@ -14,8 +15,8 @@ namespace General
             //public string name;
         }
 
+
         public SpriteRenderer CharacterSprite => characterSprite;
-        // Start is called before the first frame update
         [SerializeField] private SpriteRenderer characterSprite;
         [SerializeField] private CharacterSprites[] Characters;
         [SerializeField] private Rigidbody2D characterRigidbody; 
@@ -30,6 +31,7 @@ namespace General
         private int characterSpriteBoostingIndex = 0;
         private int  characterSpriteFallingIndex= 0;
         
+        // Start is called before the first frame update
         void Start()
         {
             characterRigidbody.freezeRotation = true;
@@ -51,6 +53,7 @@ namespace General
         
             var indexer = (int) (Time.time / 0.100f);
        
+            //selects the sprite when:
             //boosting
             if (boost)
             {
@@ -58,7 +61,6 @@ namespace General
                 characterSprite.sprite = Characters[characterSpriteIndex].boostingSprites[characterSpriteBoostingIndex];
             }
             //walking
-            //TODO: fix that when you are in the air, you can walk for a moment
             else if (characterRigidbody.velocity.y==0)
             {
                 characterSpriteWalkingIndex = (indexer) % (Characters[characterSpriteIndex].walkingSprites.Length);
@@ -75,10 +77,10 @@ namespace General
 
         void FixedUpdate()
         {
-            //when ypu remember that space is pressed, fly up
             flyUp();
         }
 
+        // sets the character fly up when its time to boost
         private void flyUp()
         {
             if (boost)

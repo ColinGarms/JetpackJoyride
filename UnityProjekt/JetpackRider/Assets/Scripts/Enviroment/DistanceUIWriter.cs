@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace Enviroment
 {
+    //writes the current distance in the text field
     public class DistanceUIWriter : MonoBehaviour
     {
         [SerializeField] private Text distanceText;

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace Enviroment
 {
+    //writes the high score in the text field
     public class HighScoreUIWriter : MonoBehaviour
     {
         [SerializeField] private Text distanceText;

@@ -32,6 +32,7 @@ public class LifeTracker : MonoBehaviour
         //check for game over condition
         if (lifePoints <= 0)
         {
+            
             gameState.SaveGameManager.SaveThisGame();
             Time.timeScale = 0;
             deathScreen.alpha = 1;

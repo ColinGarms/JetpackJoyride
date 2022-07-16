@@ -8,6 +8,7 @@ public class CoinManager : MonoBehaviour
     [SerializeField] private Text[] texts;
     [SerializeField] private PublicInformation gameState;
     
+    //adds an amount to money and writes the new amount in the text fields
     public void addAmount(int amount)
     {
         money += amount;
@@ -17,6 +18,7 @@ public class CoinManager : MonoBehaviour
         }
     }
 
+    //return the money value
     public int getMoney()
     {
         return money;
